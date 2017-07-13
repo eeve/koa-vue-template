@@ -27,7 +27,7 @@ const pug = new Pug({
 const serve = (path, cache) => Serve(resolve(path), {
 	maxage: cache && isProd ? 1000 * 60 * 60 * 24 * 30 : 0
 });
-server.use(favicon('../public/logo-48.png'));
+server.use(favicon(resolve('./favicon.ico')));
 server.use(serve('../public', true));
 
 if(!isProd) {
