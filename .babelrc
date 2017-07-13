@@ -1,0 +1,38 @@
+{
+	"plugins": [
+		"transform-object-rest-spread"
+	],
+  "env": {
+		"client": {
+			"presets": [
+				["env", {
+					"debug": true,
+					"targets": {
+						"browsers": ["last 2 versions", "ie >= 11"]
+					},
+					"useBuiltIns": true
+				}]
+			],
+			"plugins": [
+				"dynamic-import-webpack",
+				"transform-class-properties"
+			]
+		},
+		"server": {
+			"presets": [
+				["env", {
+					"debug": true,
+					"targets": {
+							"node": "6.0.0"
+						}
+					}
+				]
+			],
+			"plugins": [
+				"dynamic-import-webpack",
+				"transform-decorators-legacy",
+				"transform-class-properties"
+			]
+		}
+	}
+}
