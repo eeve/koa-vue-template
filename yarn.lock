@@ -1873,7 +1873,11 @@ cliui@^5.0.0:
     strip-ansi "^5.2.0"
     wrap-ansi "^5.1.0"
 
-clone@^2.1.1, clone@^2.1.2:
+clone@^2.1.1:
+  version "2.1.1"
+  resolved "http://registry.npm.taobao.org/clone/download/clone-2.1.1.tgz#d217d1e961118e3ac9a4b8bba3285553bf647cdb"
+
+clone@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/clone/-/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
   integrity sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=
@@ -1986,10 +1990,6 @@ concat-stream@^1.5.0:
     inherits "^2.0.3"
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
-
-connect-history-api-fallback@^1.1.0:
-  version "1.3.0"
-  resolved "http://registry.npm.taobao.org/connect-history-api-fallback/download/connect-history-api-fallback-1.3.0.tgz#e51d17f8f0ef0db90a64fdb47de3051556e9f169"
 
 console-browserify@^1.1.0:
   version "1.1.0"
@@ -2653,18 +2653,18 @@ entities@~1.1.1:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/entities/download/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
 
-errno@^0.1.1, errno@~0.1.7:
+errno@^0.1.1, errno@^0.1.3:
+  version "0.1.4"
+  resolved "http://registry.npm.taobao.org/errno/download/errno-0.1.4.tgz#b896e23a9e5e8ba33871fc996abd3635fc9a1c7d"
+  dependencies:
+    prr "~0.0.0"
+
+errno@~0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/errno/-/errno-0.1.7.tgz#4684d71779ad39af177e3f007996f7c67c852618"
   integrity sha512-MfrRBDWzIWifgq6tJj60gkAwtLNb6sQPlcFrSOflcP1aFmmruKQ2wRnze/8V6kgyz7H3FF8Npzv78mZ7XLLflg==
   dependencies:
     prr "~1.0.1"
-
-errno@^0.1.3:
-  version "0.1.4"
-  resolved "http://registry.npm.taobao.org/errno/download/errno-0.1.4.tgz#b896e23a9e5e8ba33871fc996abd3635fc9a1c7d"
-  dependencies:
-    prr "~0.0.0"
 
 error-ex@^1.3.1:
   version "1.3.2"
@@ -3423,8 +3423,7 @@ ignore@^3.3.5:
 
 image-size@~0.5.0:
   version "0.5.5"
-  resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
-  integrity sha1-Cd/Uq50g4p6xw+gLiZA3jfnjy5w=
+  resolved "http://registry.npm.taobao.org/image-size/download/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
 
 import-fresh@^2.0.0:
   version "2.0.0"
@@ -3901,12 +3900,6 @@ koa-compose@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/koa-compose/-/koa-compose-4.1.0.tgz#507306b9371901db41121c812e923d0d67d3e877"
   integrity sha512-8ODW8TrDuMYvXRwra/Kh7/rJo9BtOfPc6qO8eAfC80CnCvSjSl0bkRM24X6/XBBEyj0v1nRUQ1LyOy3dbqOWXw==
-
-koa-connect-history-api-fallback@^0.3.1:
-  version "0.3.1"
-  resolved "http://registry.npm.taobao.org/koa-connect-history-api-fallback/download/koa-connect-history-api-fallback-0.3.1.tgz#068ffee68f3a7e85e998b63d0c5a3f05b68d534d"
-  dependencies:
-    connect-history-api-fallback "^1.1.0"
 
 koa-convert@^1.2.0:
   version "1.2.0"

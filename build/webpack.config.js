@@ -31,7 +31,6 @@ module.exports = {
     extensions: ['.js', '.vue', '.less'],
     alias: {
       vue: 'vue/dist/vue.common.js',
-      // md5: 'blueimp-md5',
 			lib: path.resolve(__dirname, '../src/www/src/lib'),
 			public: path.resolve(__dirname, '../src/public')
     }
