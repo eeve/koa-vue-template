@@ -1,38 +1,44 @@
 {
-	"plugins": [
-		"transform-object-rest-spread"
-	],
   "env": {
-		"client": {
+		"production": {
 			"presets": [
-				["env", {
-					"debug": true,
-					"targets": {
-						"browsers": ["last 2 versions", "ie >= 11"]
-					},
-					"useBuiltIns": true
-				}]
-			],
-			"plugins": [
-				"dynamic-import-webpack",
-				"transform-class-properties"
+				[
+          "minify",
+          {
+            "builtIns": false
+          }
+        ],
+				[
+					"@babel/preset-env",
+					{
+						"debug": false,
+						"corejs": 3,
+						"useBuiltIns": "usage"
+					}
+				]
 			]
 		},
 		"server": {
-			"presets": [
-				["env", {
-					"debug": true,
-					"targets": {
-							"node": "6.0.0"
-						}
-					}
-				]
-			],
 			"plugins": [
-				"dynamic-import-webpack",
-				"transform-decorators-legacy",
-				"transform-class-properties"
+				["@babel/plugin-proposal-decorators", {
+					"decoratorsBeforeExport": true
+				}]
 			]
 		}
-	}
+	},
+	"presets": [
+		[
+			"@babel/preset-env",
+			{
+				"debug": false,
+				"corejs": 3,
+				"useBuiltIns": "usage"
+			}
+		]
+	],
+	"plugins": [
+		"@babel/plugin-syntax-dynamic-import",
+		"@babel/plugin-proposal-object-rest-spread",
+		"@babel/plugin-proposal-class-properties"
+	]
 }
