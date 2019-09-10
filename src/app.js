@@ -5,7 +5,7 @@ import favicon from 'koa-favicon';
 import StaticServe from 'koa-static';
 import path from 'path';
 import config from './config';
-import historyApiFallbackMiddleware from 'koa-connect-history-api-fallback';
+import historyApiFallbackMiddleware from 'koa2-connect-history-api-fallback';
 const resolve = file => path.resolve(__dirname, file)
 const isProd = process.env.NODE_ENV === 'production'
 
