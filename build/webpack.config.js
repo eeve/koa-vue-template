@@ -28,7 +28,7 @@ module.exports = {
     filename: 'assets/[name]_[hash:6].js'
   },
   resolve: {
-    extensions: ['.js', '.vue', '.less'],
+    extensions: ['.js', '.vue', '.css'],
     alias: {
       vue: 'vue/dist/vue.common.js',
 			lib: path.resolve(__dirname, '../src/www/src/lib'),
@@ -47,16 +47,19 @@ module.exports = {
 				use: 'vue-loader'
       },
       {
-        test: /\.(css|less)$/,
+				test: /\.(css)$/,
+				exclude: /node_modules/,
 				use: isProd
 					? [
 						MiniCssExtractPlugin.loader,
-						{
-							loader: 'css-loader'
-						},
-						'less-loader?javascriptEnabled=true'
+						'css-loader',
+						'postcss-loader'
 					]
-					: ['vue-style-loader', 'css-loader', 'less-loader?javascriptEnabled=true']
+					: [
+						'vue-style-loader',
+						'css-loader',
+						'postcss-loader'
+					]
       },
       {
         test: /\.(gif|jpg|png|eot|ttf|woff|woff2|svg)$/,
@@ -83,7 +86,7 @@ module.exports = {
 				},
 				styles: {
 					chunks: 'all',
-					test: /.(css|less)/,
+					test: /.(css)/,
 					name: 'styles',
 					minChunks: 3,
 					reuseExistingChunk: true,

@@ -14,19 +14,7 @@
 	</div>
 </template>
 
-<style class="less">
-	.logo {
-		width: 24px;
-		margin-right: 10px;
-		display: inline-block;
-		vertical-align: middle;
-	}
-	.fade-enter-active, .fade-leave-active {
-		transition: all .2s ease;
-	}
-	.fade-enter, .fade-leave-active {
-		opacity: 0;
-	}
+<style src='./styles/app.css'>
 </style>
 
 

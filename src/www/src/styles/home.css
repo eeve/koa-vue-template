@@ -1,0 +1,7 @@
+@tailwind components;
+
+@tailwind utilities;
+
+h1 {
+	font-size: 14px;
+}
