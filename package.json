@@ -17,7 +17,7 @@
     "koa-favicon": "^2.0.1",
     "koa-pug": "^4.0.2",
     "koa-static": "^5.0.0",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "tailwindcss": "^1.1.2",
     "too-logger": "^0.0.1-9"
   },
